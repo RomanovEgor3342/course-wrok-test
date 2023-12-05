@@ -1,6 +1,5 @@
 #include "../headers/get-option.h"
-char get_option(){
-    char ch;
-    ch = getchar();
-    return ch;
+int get_option(){
+    wchar_t ch = getwchar();
+    return ch - L'0';
 }
